@@ -1,0 +1,380 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    overflow: hidden;
+}
+
+.entire-section
+{
+    height: 100%;
+    overflow: auto;
+    font-family: 'Kaushan Script';
+}
+
+.bg-color
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+header
+{
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+}
+
+.brand
+{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo
+{
+    margin: 0 0.5rem 0 0;
+    font-size: 1.1rem;
+    color: rgb(23, 178, 106);
+}
+
+.logoname
+{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.nav1
+{
+    padding: 1rem;
+}
+
+.links-nav1
+{
+    text-decoration: none;
+    color: black;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.nav2
+{
+    padding: 1rem;
+}
+
+.links-nav2
+{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    margin: 0.25rem;
+    padding: 0.7rem;
+}
+
+.links-nav1:hover, .links-nav2:hover
+{
+    background-color: rgba(23, 178, 106, 0.84);
+    color: white;
+}
+
+.section1
+{
+    height: 100dvh;
+    background-image: url(bgSarah.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+
+.circular-image
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: 2rem;
+    animation-name: create;
+    animation-duration: 2.5s;
+}
+
+.sarah-profile
+{
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+
+h1
+{
+    font-size: 45px;
+    animation-name: create;
+    animation-duration: 2.5s;
+}
+
+.intro
+{
+    margin: 0.4rem;
+    animation-name: create;
+    animation-duration: 2.5s;
+}
+
+.explore
+{
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0 0;
+    width: 15rem;
+    height: 3.25rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 178, 106);
+    font-weight: bold;
+    animation-name: create;
+    animation-duration: 2.5s;
+}
+
+.explore:hover
+{
+    background-color: rgba(23, 178, 106, 0.84);
+    transform: scale(1.05);
+}
+
+.explore:active
+{
+    background-color: rgba(23, 178, 106, 0.84);
+    transform: scale(0.95);
+    cursor: wait;
+}
+
+.bars, #mybar
+{
+    display: none;
+}
+
+@keyframes create
+{
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+
+.products
+{
+    padding: 4rem 0;
+    height: auto;
+}
+
+h2
+{
+    text-align: center;
+}
+
+.navigate
+{
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.product-links
+{
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: black;
+}
+
+.table
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.image-item
+{
+    width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.image-fashion
+{
+    width: 100%;
+    height: auto;
+}
+
+
+h4
+{
+    margin: 0.3rem 0;
+}
+
+@media screen and (max-width: 1100px)
+{
+    .nav2
+    {
+        display: none;
+    }
+
+    .dropdown
+    {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav1
+    {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        padding: 0;
+        top: 2rem;
+        right: 0;
+    }
+
+    .links-nav1
+    {
+        color: black;
+        padding: 1.15rem 1.5rem;
+        text-align: center;
+        width: 200px;
+        background-color: white;
+    }
+
+    .nav1
+    {
+        display: none;
+    }
+    
+    #mybar
+    {
+        display: none;
+    }
+
+    .dropdown:hover .nav1
+    {
+        display: flex;
+    }
+
+    .dropdown label + #mybar:checked + .nav1
+    {
+        display: flex;
+    }
+
+    .bars
+    {
+        display: contents;
+        font-size: 1.5rem;
+        padding: 0.7rem;
+    }
+    
+    .bars:hover
+    {
+        background-color: rgb(199, 196, 196);
+        cursor: pointer;
+    }
+
+    .links-nav1:hover
+    {
+        background-color: rgb(23, 178, 106);
+        color: white;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+
+    .row
+    {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .product
+    {
+       margin: 0.5rem 0;
+       width: 90%;
+    }
+
+    .intro
+    {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    h1
+    {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .explore
+    {
+        font-size: 1rem;
+        margin: 0.5rem 0 0 0;
+        width: 10rem;
+        height: 3.15rem;
+    }
+
+    .image-item
+    {
+
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .circular-image
+    {
+        height: 150px;
+        width: 150px;
+    }
+
+    .intro
+    {
+        font-size: 0.9rem;
+    }
+
+    h1
+    {
+        font-size: 1.25rem;
+    }
+}
